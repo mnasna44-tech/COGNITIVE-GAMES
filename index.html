@@ -50,6 +50,13 @@
       justify-content: center;
       align-items: center;
     }
+    .grid{
+      display:grid;
+      justify-content:center;
+      align-content:center;
+      justify-items:center;
+      align-items:center;
+    }
     .btns{
       display:flex;
       justify-content:center;
@@ -224,6 +231,8 @@ function render(pan,p){
   let g = document.createElement("div");
   g.className = "grid";
 
+  g.style.placeItems="center";
+  
   if(level >= 5){
     g.style.gap = "12px";
   }
